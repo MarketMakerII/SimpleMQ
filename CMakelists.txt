@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.20)
+
+project(main)
+
+set(CMAKE_C_COMPILER /opt/rh/devtoolset-8/root/usr/bin/gcc)
+set(CMAKE_CXX_COMPILER /opt/rh/devtoolset-8/root/usr/bin/g++)
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")
+
+add_executable(main main.cpp Fault.cpp Fault.h stdafx.cpp stdafx.h targetver.h WorkerThread.cpp WorkerThread.h)

@@ -1,0 +1,1 @@
+/opt/rh/devtoolset-8/root/usr/bin/g++  -pthread -g CMakeFiles/main.dir/main.cpp.o CMakeFiles/main.dir/Fault.cpp.o CMakeFiles/main.dir/stdafx.cpp.o CMakeFiles/main.dir/WorkerThread.cpp.o -o main 

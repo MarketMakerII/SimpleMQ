@@ -103,7 +103,7 @@ void WorkerThread::TimerThread()
     while (!m_timerExit)
     {
         // Sleep for 250mS then put a MSG_TIMER into the message queue
-        std::this_thread::sleep_for(250ms);
+        std::this_thread::sleep_for(std::chrono::milliseconds(250));
 
         std::shared_ptr<ThreadMsg> threadMsg (new ThreadMsg(MSG_TIMER, 0));
 

@@ -1,0 +1,1 @@
+/opt/rh/devtoolset-8/root/usr/bin/g++  -pthread -g CMakeFiles/messagequeue.dir/main.cpp.o CMakeFiles/messagequeue.dir/Fault.cpp.o CMakeFiles/messagequeue.dir/stdafx.cpp.o CMakeFiles/messagequeue.dir/WorkerThread.cpp.o -o messagequeue 

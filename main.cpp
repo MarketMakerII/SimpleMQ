@@ -1,6 +1,8 @@
 #include "WorkerThread.h"
 #include "Fault.h"
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
 
 using namespace std;
 
@@ -13,6 +15,10 @@ WorkerThread workerThread2("WorkerThread2");
 //------------------------------------------------------------------------------
 int main(void)
 {	
+	unsigned seed;
+	seed = time(0);
+	srand(seed);
+
 	// Create worker threads
 	workerThread1.CreateThread();
 	workerThread2.CreateThread();
@@ -34,7 +40,14 @@ int main(void)
 	workerThread2.PostMsg(userData2);
 
 	// Give time for messages processing on worker threads
-	this_thread::sleep_for(1s);
+	// this_thread::sleep_for(std::chrono::seconds(1));
+	while (1) {
+		userData1->year = rand();
+		userData2->year = rand();
+		workerThread1.PostMsg(userData1);
+		workerThread2.PostMsg(userData2);
+		this_thread::sleep_for(std::chrono::milliseconds(500));
+	}
 
 	workerThread1.ExitThread();
 	workerThread2.ExitThread();

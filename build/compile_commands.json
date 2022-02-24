@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/workspaces/StdWorkerThread/build",
+  "command": "/opt/rh/devtoolset-8/root/usr/bin/g++    -pthread -g -std=gnu++11 -o CMakeFiles/main.dir/main.cpp.o -c /workspaces/StdWorkerThread/main.cpp",
+  "file": "/workspaces/StdWorkerThread/main.cpp"
+},
+{
+  "directory": "/workspaces/StdWorkerThread/build",
+  "command": "/opt/rh/devtoolset-8/root/usr/bin/g++    -pthread -g -std=gnu++11 -o CMakeFiles/main.dir/Fault.cpp.o -c /workspaces/StdWorkerThread/Fault.cpp",
+  "file": "/workspaces/StdWorkerThread/Fault.cpp"
+},
+{
+  "directory": "/workspaces/StdWorkerThread/build",
+  "command": "/opt/rh/devtoolset-8/root/usr/bin/g++    -pthread -g -std=gnu++11 -o CMakeFiles/main.dir/stdafx.cpp.o -c /workspaces/StdWorkerThread/stdafx.cpp",
+  "file": "/workspaces/StdWorkerThread/stdafx.cpp"
+},
+{
+  "directory": "/workspaces/StdWorkerThread/build",
+  "command": "/opt/rh/devtoolset-8/root/usr/bin/g++    -pthread -g -std=gnu++11 -o CMakeFiles/main.dir/WorkerThread.cpp.o -c /workspaces/StdWorkerThread/WorkerThread.cpp",
+  "file": "/workspaces/StdWorkerThread/WorkerThread.cpp"
+}
+]
